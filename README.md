@@ -1,6 +1,16 @@
 # AI Engineering book and other resources
 > _This repo will be updated with more resources in the next few weeks._
 
+## 📝 My study notes app (personal fork addition)
+A local note-taking companion lives in [`notes-app/`](notes-app/) — per-chapter/section
+notes, open/answered questions, and a review view for revisiting what's unanswered.
+
+Run it:
+```bash
+cd notes-app && python3 server.py
+```
+Then open http://localhost:8420. See [notes-app/README.md](notes-app/README.md) for details.
+
 - [About the book AI Engineering](#about-the-book)
     - [Table of contents](ToC.md)
     - [Chapter summaries](chapter-summaries.md)

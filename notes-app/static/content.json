@@ -1,0 +1,795 @@
+[
+  {
+    "num": 1,
+    "title": "Introduction to Building AI Applications with Foundation Models",
+    "page": "1",
+    "sections": [
+      {
+        "title": "The Rise of AI Engineering",
+        "page": "2",
+        "subsections": [
+          {
+            "title": "From Language Models to Large Language Models",
+            "page": "2"
+          },
+          {
+            "title": "From Large Language Models to Foundation Models",
+            "page": "8"
+          },
+          {
+            "title": "From Foundation Models to AI Engineering",
+            "page": "12"
+          }
+        ]
+      },
+      {
+        "title": "Foundation Model Use Cases",
+        "page": "16",
+        "subsections": [
+          {
+            "title": "Coding",
+            "page": "20"
+          },
+          {
+            "title": "Image and Video Production",
+            "page": "22"
+          },
+          {
+            "title": "Writing",
+            "page": "22"
+          },
+          {
+            "title": "Education",
+            "page": "24"
+          },
+          {
+            "title": "Conversational Bots",
+            "page": "26"
+          },
+          {
+            "title": "Information Aggregation",
+            "page": "26"
+          },
+          {
+            "title": "Data Organization",
+            "page": "27"
+          },
+          {
+            "title": "Workflow Automation",
+            "page": "28"
+          }
+        ]
+      },
+      {
+        "title": "Planning AI Applications",
+        "page": "28",
+        "subsections": [
+          {
+            "title": "Use Case Evaluation",
+            "page": "29"
+          },
+          {
+            "title": "Setting Expectations",
+            "page": "32"
+          },
+          {
+            "title": "Milestone Planning",
+            "page": "33"
+          },
+          {
+            "title": "Maintenance",
+            "page": "34"
+          }
+        ]
+      },
+      {
+        "title": "The AI Engineering Stack",
+        "page": "35",
+        "subsections": [
+          {
+            "title": "Three Layers of the AI Stack",
+            "page": "37"
+          },
+          {
+            "title": "AI Engineering Versus ML Engineering",
+            "page": "39"
+          },
+          {
+            "title": "AI Engineering Versus Full-Stack Engineering",
+            "page": "46"
+          }
+        ]
+      },
+      {
+        "title": "Summary",
+        "page": "47",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<p>Table 1-3. Common generative AI use cases across consumer and enterprise applications.</p>\n<table><thead><tr><th>Category</th><th>Examples of Consumer Use Cases</th><th>Examples of Enterprise Use Cases</th></tr></thead><tbody><tr><td>Coding</td><td>Coding</td><td>Coding</td></tr><tr><td>Image and Video Production</td><td>Photo and video editing<br>Design</td><td>Presentation<br>Ad generation</td></tr><tr><td>Writing</td><td>Email<br>Social media and blog posts</td><td>Copywriting<br>SEO<br>Reports, memos, design docs</td></tr><tr><td>Education</td><td>Tutoring<br>Essay grading</td><td>Employee onboarding<br>Employee upskill training</td></tr><tr><td>Conversational Bots</td><td>General chatbot<br>AI companion</td><td>Customer support<br>Product copilots</td></tr><tr><td>Information Aggregation</td><td>Summarization<br>Talk-to-your-docs</td><td>Summarization<br>Market research</td></tr><tr><td>Data Organization</td><td>Image search<br>Memex</td><td>Knowledge management<br>Document processing</td></tr><tr><td>Workflow Automation</td><td>Travel planning<br>Event planning</td><td>Data extraction, entry, and annotation<br>Lead generation</td></tr></tbody></table>\n<p>I meant this chapter to serve two purposes. One is to explain the emergence of AI engineering as a discipline, thanks to the availability of foundation models. Two is to give an overview of the process needed to build applications on top of these models. I hope that this chapter achieved this goal. As an overview chapter, it only lightly touched on many concepts. These concepts will be explored further in the rest of the book.</p>\n<p>The chapter discussed the rapid evolution of AI in recent years. It walked through some of the most notable transformations, starting with the transition from language models to large language models, thanks to a training approach called self-supervision. It then traced how language models incorporated other data modalities to become foundation models, and how foundation models gave rise to AI engineering.</p>\n<p>The rapid growth of AI engineering is motivated by the many applications that the emerging capabilities of foundation models enable. This chapter discussed some of the most successful application patterns, both for consumers and enterprises. Despite the incredible number of AI applications already in production, we&#x27;re still in the early stages of AI engineering, with countless more innovations yet to be built.</p>\n<p>Before building an application, an important yet often overlooked question is whether you should build it. This chapter discussed this question together with major considerations for building AI applications.</p>\n<p>While AI engineering is a new term, it evolved out of ML engineering, which is the overarching discipline involved with building applications with all ML models. Many principles from ML engineering are still applicable to AI engineering. However, AI engineering also brings with it new challenges and solutions. The last section of the chapter discusses the AI engineering stack, including how it has changed from ML engineering.</p>\n<p>One aspect of AI engineering that is especially challenging to capture in writing is the incredible amount of collective energy, creativity, and engineering talent that the community brings. This collective enthusiasm can often be overwhelming, as it&#x27;s impossible to keep up-to-date with new techniques, discoveries, and engineering feats that seem to happen constantly.</p>\n<p>One consolidation is that since AI is great at information aggregation, it can help us aggregate and summarize all these new updates. But tools can only help to a certain extent. The more overwhelming a space is, the more important it is to have a framework to help us navigate it. This book aims to provide such a framework.</p>\n<p>The rest of the book will explore this framework step-by-step, starting with the fundamental building block of AI engineering: the foundation models that make so many amazing applications possible.</p>",
+    "resources_html": "<p class=\"res-item\">1. <a href=\"https://arxiv.org/abs/2303.10130\" target=\"_blank\" rel=\"noopener\">GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models</a> (OpenAI, 2023)</p>\n<p>OpenAI (2023) has excellent research on how exposed different occupations are to AI. They defined a task as exposed if AI and AI-powered software can reduce the time needed to complete this task by at least 50%. An occupation with 80% exposure means that 80% of this occupation tasks are considered exposed. According to the study, occupations with 100% or close to 100% exposure include interpreters and translators, tax preparers, web designers, and writers. Some of them are shown in Figure 1-5. Not unsurprisingly, occupations with no exposure to AI include cooks, stonemasons, and athletes. This study gives a good idea of what use cases AI is good for. 1. <a href=\"https://applied-llms.org/\" target=\"_blank\" rel=\"noopener\">Applied LLMs</a> (Yan et al., 2024)</p>\n<p>Eugene Yan and co. shared their learnings from one year of deploying LLM applications. Many helpful tips! 1. <a href=\"https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product\" target=\"_blank\" rel=\"noopener\">Musings on Building a Generative AI Product</a> (Juan Pablo Bottaro and Co-authored byKarthik Ramgopal, LinkedIn, 2024)</p>\n<p>One of the best reports I&#x27;ve read on deploying LLM applications: what worked and what didn&#x27;t. They discussed structured outputs, latency vs. throughput tradeoffs, the challenges of evaluation (they spent most of their time on creating annotation guidelines), and the last-mile challenge of building gen AI applications. 1. <a href=\"https://developer.apple.com/design/human-interface-guidelines/machine-learning\" target=\"_blank\" rel=\"noopener\">Apple&#x27;s human interface guideline</a> for designing ML applications</p>\n<p>Outlines how to think about the role of AI and human in your application, which influences the interface decisions. 1. <a href=\"https://www.reddit.com/r/LocalLLaMA/\" target=\"_blank\" rel=\"noopener\">LocalLlama subreddit</a>: useful to check from time to time to see what people are up to. 1. <a href=\"https://www.stateof.ai/\" target=\"_blank\" rel=\"noopener\">State of AI Report</a> (updated yearly): very comprehensive. It&#x27;s useful to skim through to see what you&#x27;ve missed. 1. <a href=\"https://a16z.com/generative-ai-enterprise-2024/\" target=\"_blank\" rel=\"noopener\">16 Changes to the Way Enterprises Are Building and Buying Generative AI</a> (Andreessen Horowitz, 2024) 1. <a href=\"https://dl.acm.org/doi/abs/10.1145/2858036.2858288\" target=\"_blank\" rel=\"noopener\">&quot;Like Having a Really Bad PA&quot;: The Gulf between User Expectation and Experience of Conversational Agents</a> (Luger and Sellen, 2016)</p>\n<p>A solid, ahead-of-its-time paper on user experience with conversational agents. It makes a great case for the value of dialogue interfaces and what&#x27;s needed to make them useful, featuring in-depth interviews with 14 users. &quot;<em>It has been argued that the true value of dialogue interface systems over direct manipulation (GUI) can be found where task complexity is greatest.</em>&quot; 1. <a href=\"https://www.youtube.com/watch?v=J91_npj0Nfw&amp;ab_channel=StanfordOnline\" target=\"_blank\" rel=\"noopener\">Stanford Webinar - How AI is Changing Coding and Education, Andrew Ng &amp; Mehran Sahami</a> (2024)</p>\n<p>A great discussion that shows how the Stanford&#x27;s CS department thinks about what CS education will look like in the future.. My favorite quote: &quot;CS is about systematic thinking, not writing code.&quot; 1. <a href=\"https://www.reddit.com/r/ArtistLounge/comments/1ap0cm3/professional_artists_how_much_has_ai_art_affected/\" target=\"_blank\" rel=\"noopener\">Professional artists: how much has AI art affected your career? - 1 year later : r/ArtistLounge</a></p>\n<p>Many people share their experience on how AI impacted their work. E.g.:</p>\n<p><em>&quot;From time to time, I am sitting in meetings where managers dream of replacing coders, writers and visual artists with AI. I hate those meetings and try to avoid them, but I still get involved from time to time. All my life, I loved coding &amp; art. But nowadays, I often feel this weird sadness in my heart.&quot;</em></p>"
+  },
+  {
+    "num": 2,
+    "title": "Understanding Foundation Models",
+    "page": "49",
+    "sections": [
+      {
+        "title": "Training Data",
+        "page": "50",
+        "subsections": [
+          {
+            "title": "Multilingual Models",
+            "page": "51"
+          },
+          {
+            "title": "Domain-Specific Models",
+            "page": "56"
+          }
+        ]
+      },
+      {
+        "title": "Modeling",
+        "page": "58",
+        "subsections": [
+          {
+            "title": "Model Architecture",
+            "page": "58"
+          },
+          {
+            "title": "Model Size",
+            "page": "67"
+          }
+        ]
+      },
+      {
+        "title": "Post-Training",
+        "page": "78",
+        "subsections": [
+          {
+            "title": "Supervised Finetuning",
+            "page": "80"
+          },
+          {
+            "title": "Preference Finetuning",
+            "page": "83"
+          }
+        ]
+      },
+      {
+        "title": "Sampling",
+        "page": "88",
+        "subsections": [
+          {
+            "title": "Sampling Fundamentals",
+            "page": "88"
+          },
+          {
+            "title": "Sampling Strategies",
+            "page": "90"
+          },
+          {
+            "title": "Test Time Compute",
+            "page": "96"
+          },
+          {
+            "title": "Structured Outputs",
+            "page": "99"
+          },
+          {
+            "title": "The Probabilistic Nature of AI",
+            "page": "105"
+          }
+        ]
+      },
+      {
+        "title": "Summary",
+        "page": "111",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<center><img src=\"assets/rlhf.png\" width=\"800\"><br>\n<i>The overall training workflow with pre-training, SFT, and RLHF. Image originally from my <a href=\"https://huyenchip.com/2023/05/02/rlhf.html\">RLHF blog post</a> (May 2023)</i>\n</center>\n<br>\n<p>This chapter discussed the core design decisions when building a foundation model. Since most people will be using ready-made foundation models instead of training one from scratch, I skipped the nitty-gritty training details in favor of modeling factors that help you determine what models to use and how to use them.</p>\n<p>A crucial factor affecting a model&#x27;s performance is its training data. Large models require a large amount of training data, which can be expensive and time-consuming to acquire. Model providers, therefore, often leverage whatever data is available. This leads to models that can perform well on the many tasks present in the training data, which may not include the specific task you want. This chapter went over why it&#x27;s often necessary to curate training data to develop models targeting specific languages, especially low-resource languages, and specific domains.</p>\n<p>After sourcing the data, model development can begin. While model training often dominates the headlines, an important step prior to that is architecting the model. The chapter looked into modeling choices, such as model architecture and model size. The dominating architecture for language-based foundation models is transformer. This chapter explored the problems that the transformer architecture was designed to address, as well as its limitations.</p>\n<p>The scale of a model can be measured by three key numbers: the number of parameters, the number of training tokens, and the number of FLOPs needed for training. Two aspects that influence the amount of compute needed to train a model are the model size and the data size. The scaling law helps determine the optimal number of parameters and number of tokens given a compute budget. This chapter also looked at the scaling bottlenecks. Up until now, scaling up a model generally makes it better. But how long will this continue to be true?</p>\n<p>Due to the low quality of training data and self-supervision during pre-training, the resulting model might produce outputs that don&#x27;t align with what users want. This is addressed by post-training, which consists of two steps: supervised finetuning and preference finetuning. Human preference is diverse and impossible to capture in a single mathematical formula, so existing solutions are far from foolproof.</p>\n<p>This chapter also covered one of my favorite topics: sampling, the process by which a model generates output tokens. Sampling makes AI models probabilistic. This probabilistic nature is what makes models like ChatGPT and Gemini great for creative tasks and fun to talk to. However, this probabilistic nature also causes inconsistency and hallucinations.</p>\n<p>Working with AI models requires building your workflows around their probabilistic nature. The rest of this book will explore how to make AI engineering, if not deterministic, at least systematic. The first step towards systematic AI engineering is to establish a solid evaluation pipeline to help us detect failures and unexpected changes. Evaluation for foundation models is so crucial that I dedicated two chapters to it, starting with the next chapter.</p>",
+    "resources_html": "<p>### Training large models</p>\n<p>Papers detailing the training process of important models are gold mines. I&#x27;d recommend reading all of them. But if you can only pick 3, I&#x27;d recommend Gopher, InstructGPT, and Llama 3.</p>\n<p class=\"res-item\">1. [GPT-2] <a href=\"https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf\" target=\"_blank\" rel=\"noopener\">Language Models are Unsupervised Multitask Learners</a> (OpenAI, 2019) 2. [GPT-3] <a href=\"https://arxiv.org/abs/2005.14165\" target=\"_blank\" rel=\"noopener\">Language Models are Few-Shot Learners</a> (OpenAI, 2020) 3. [Gopher] <a href=\"https://arxiv.org/abs/2112.11446\" target=\"_blank\" rel=\"noopener\">Scaling Language Models: Methods, Analysis &amp; Insights from Training Gopher</a> (DeepMind, 2021) 4. [InstructGPT] <a href=\"https://arxiv.org/abs/2203.02155\" target=\"_blank\" rel=\"noopener\">Training language models to follow instructions with human feedback</a> (OpenAI, 2022) 5. [Chinchilla] <a href=\"https://arxiv.org/abs/2203.15556\" target=\"_blank\" rel=\"noopener\">Training Compute-Optimal Large Language Models</a> (DeepMind, 2022) 6. <a href=\"https://arxiv.org/abs/2309.16609\" target=\"_blank\" rel=\"noopener\">Qwen technical report</a> (Alibaba, 2022) 7. <a href=\"https://arxiv.org/abs/2407.10671\" target=\"_blank\" rel=\"noopener\">Qwen2 Technical Report</a> (Alibaba, 2024) 8. <a href=\"https://arxiv.org/abs/2212.08073\" target=\"_blank\" rel=\"noopener\">Constitutional AI: Harmlessness from AI Feedback</a> (Anthropic, 2022) 9. <a href=\"https://arxiv.org/abs/2302.13971\" target=\"_blank\" rel=\"noopener\">LLaMA: Open and Efficient Foundation Language Models</a> (Meta, 2023) 10. <a href=\"https://arxiv.org/abs/2307.09288\" target=\"_blank\" rel=\"noopener\">Llama 2: Open Foundation and Fine-Tuned Chat Models</a> (Meta, 2023) 11. <a href=\"https://arxiv.org/abs/2407.21783\" target=\"_blank\" rel=\"noopener\">The Llama 3 Herd of Models</a> (Meta, 2024)</p>\n<p>This paper is so good. The section on synthetic data generation and verification is especially important. 12. <a href=\"https://arxiv.org/abs/2403.04652\" target=\"_blank\" rel=\"noopener\">Yi: Open Foundation Models by 01.AI</a> (01.AI, 2024)</p>\n<p><strong>Scaling laws</strong></p>\n<p class=\"res-item\">1. <a href=\"https://imbue.com/research/70b-infrastructure/\" target=\"_blank\" rel=\"noopener\">From bare metal to high performance training: Infrastructure scripts and best practices - imbue</a></p>\n<p>Discusses how to scale compute to train large models. It uses 4,092 H100 GPUs spread across 511 computers, 8 GPUs/computer 2. <a href=\"https://arxiv.org/abs/2001.08361\" target=\"_blank\" rel=\"noopener\">Scaling Laws for Neural Language Models</a> (OpenAI, 2020)</p>\n<p>Earlier scaling law. Only up to 1B non-embedding params and 1B tokens. 3. <a href=\"https://arxiv.org/abs/2203.15556\" target=\"_blank\" rel=\"noopener\">Training Compute-Optimal Large Language Models</a> (Hoffman et al., 2022)</p>\n<p>Known as Chinchilla scaling law, this might be the most well-known scaling law paper. 4. <a href=\"https://proceedings.neurips.cc/paper_files/paper/2023/hash/9d89448b63ce1e2e8dc7af72c984c196-Abstract-Conference.html\" target=\"_blank\" rel=\"noopener\">Scaling Data-Constrained Language Models</a> (Muennighoff et al., 2023)</p>\n<p><em>&quot;We find that with constrained data for a fixed compute budget, training with up to 4 epochs of repeated data yields negligible changes to loss compared to having unique data. However, with more repetition, the value of adding compute eventually decays to zero.&quot;</em> 5. <a href=\"https://arxiv.org/abs/2210.11416\" target=\"_blank\" rel=\"noopener\">Scaling Instruction-Finetuned Language Models</a> (Chung et al., 2022)</p>\n<p>A very good paper that talks about the importance of diversity of instruction data. 6. <a href=\"https://arxiv.org/abs/2401.00448\" target=\"_blank\" rel=\"noopener\">Beyond Chinchilla-Optimal: Accounting for Inference in Language Model Scaling Laws</a> (Sardana et al., 2023) 7. <a href=\"https://www.ll.mit.edu/news/ai-models-are-devouring-energy-tools-reduce-consumption-are-here-if-data-centers-will-adopt\" target=\"_blank\" rel=\"noopener\">AI models are devouring energy. Tools to reduce consumption are here, if data centers will adopt</a> ( MIT Lincoln Laboratory, 2023) 8. <a href=\"https://arxiv.org/abs/2211.04325\" target=\"_blank\" rel=\"noopener\">Will we run out of data? Limits of LLM scaling based on human-generated data</a> (Villalobos et al., 2022)</p>\n<p><strong>Fun stuff</strong></p>\n<p class=\"res-item\">1. <a href=\"https://www.anthropic.com/research/evaluating-feature-steering\" target=\"_blank\" rel=\"noopener\">Evaluating feature steering: A case study in mitigating social biases</a> (Anthropic, 2024)</p>\n<p>This area of research is awesome. They focused on 29 <a href=\"https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html#safety-relevant-bias\" target=\"_blank\" rel=\"noopener\">features related to social biases</a> and found that feature steering can influence specific social biases, but it may also produce unexpected \u2018off-target effects&#x27;. 2. <a href=\"https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html\" target=\"_blank\" rel=\"noopener\">Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet</a> (Anthropic, 2024) 3. <a href=\"https://github.com/ianand/spreadsheets-are-all-you-need\" target=\"_blank\" rel=\"noopener\">GitHub - ianand/spreadsheets-are-all-you-need</a></p>\n<p><em>&quot;Implements the forward pass of GPT2 (an ancestor of ChatGPT) entirely in Excel using standard spreadsheet functions.&quot;</em> 4. <a href=\"https://github.com/jessevig/bertviz\" target=\"_blank\" rel=\"noopener\">BertViz: Visualize Attention in NLP Models (BERT, GPT2, BART, etc.)</a></p>\n<p>A helpul visualization of multi-head attention in action, developed to show how BERT works.</p>\n<p>### Sampling</p>\n<p class=\"res-item\">1. <a href=\"https://www.aidancooper.co.uk/constrained-decoding/\" target=\"_blank\" rel=\"noopener\">A Guide to Structured Generation Using Constrained Decoding</a> (Aidan Cooper, 2024)</p>\n<p>An in-depth, detailed tutorial on generating structured outputs. 2. <a href=\"https://lmsys.org/blog/2024-02-05-compressed-fsm/\" target=\"_blank\" rel=\"noopener\">Fast JSON Decoding for Local LLMs with Compressed Finite State Machine</a> (LMSYS, 2024) 3. <a href=\"https://blog.dottxt.co/how-fast-cfg.html\" target=\"_blank\" rel=\"noopener\">How fast can grammar-structured generation be?</a> (Brandon T. Willard, 2024)</p>\n<p>I also wrote a post on <a href=\"https://huyenchip.com/2024/01/16/sampling.html\" target=\"_blank\" rel=\"noopener\">sampling for text generation</a> (2024).</p>\n<p>### Context length and context efficiency</p>\n<p class=\"res-item\">1. <a href=\"https://huggingface.co/blog/wenbopan/long-context-fine-tuning\" target=\"_blank\" rel=\"noopener\">Everything About Long Context Fine-tuning</a> (Wenbo Pan, 2024) 2. <a href=\"https://arxiv.org/abs/2402.10171v1\" target=\"_blank\" rel=\"noopener\">Data Engineering for Scaling Language Models to 128K Context</a> (Yu et al., 2024) 3. <a href=\"https://blog.gopenai.com/how-to-speed-up-llms-and-use-100k-context-window-all-tricks-in-one-place-ffd40577b4c\" target=\"_blank\" rel=\"noopener\">The Secret Sauce behind 100K context window in LLMs: all tricks in one place</a> (Galina Alperovich, 2023) 4. <a href=\"https://kaiokendev.github.io/context\" target=\"_blank\" rel=\"noopener\">Extending Context is Hard\u2026but not Impossible</a> (kaioken, 2023) 5. <a href=\"https://arxiv.org/abs/2104.09864\" target=\"_blank\" rel=\"noopener\">RoFormer: Enhanced Transformer with Rotary Position Embedding</a> (Su et al., 2021)</p>\n<p>Introducing RoPE, a technique to handle positional embeddings that enables transformer-based models to handle longer context length.</p>"
+  },
+  {
+    "num": 3,
+    "title": "Evaluation Methodology",
+    "page": "113",
+    "sections": [
+      {
+        "title": "Challenges of Evaluating Foundation Models",
+        "page": "114",
+        "subsections": []
+      },
+      {
+        "title": "Understanding Language Modeling Metrics",
+        "page": "118",
+        "subsections": [
+          {
+            "title": "Entropy",
+            "page": "119"
+          },
+          {
+            "title": "Cross Entropy",
+            "page": "120"
+          },
+          {
+            "title": "Bits-per-Character and Bits-per-Byte",
+            "page": "121"
+          },
+          {
+            "title": "Perplexity",
+            "page": "121"
+          },
+          {
+            "title": "Perplexity Interpretation and Use Cases",
+            "page": "122"
+          }
+        ]
+      },
+      {
+        "title": "Exact Evaluation",
+        "page": "125",
+        "subsections": [
+          {
+            "title": "Functional Correctness",
+            "page": "126"
+          },
+          {
+            "title": "Similarity Measurements Against Reference Data",
+            "page": "127"
+          },
+          {
+            "title": "Introduction to Embedding",
+            "page": "134"
+          }
+        ]
+      },
+      {
+        "title": "AI as a Judge",
+        "page": "136",
+        "subsections": [
+          {
+            "title": "Why AI as a Judge?",
+            "page": "137"
+          },
+          {
+            "title": "How to Use AI as a Judge",
+            "page": "138"
+          },
+          {
+            "title": "Limitations of AI as a Judge",
+            "page": "141"
+          },
+          {
+            "title": "What Models Can Act as Judges?",
+            "page": "145"
+          }
+        ]
+      },
+      {
+        "title": "Ranking Models with Comparative Evaluation",
+        "page": "148",
+        "subsections": [
+          {
+            "title": "Challenges of Comparative Evaluation",
+            "page": "152"
+          },
+          {
+            "title": "The Future of Comparative Evaluation",
+            "page": "155"
+          }
+        ]
+      },
+      {
+        "title": "Summary",
+        "page": "156",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<center><img src=\"assets/ai-judge.png\" width=\"600\"><br>\n<i>Figure 3-8. An example of an AI judge that evaluates the quality of an answer given a question.</i>\n</center>\n<br>\n<p>The stronger AI models become, the higher the potential for catastrophic failures, which makes evaluation even more important. At the same time, evaluating open-ended, powerful models is challenging. These challenges make many teams turn towards human evaluation. Having humans in the loop for sanity checks is always helpful, and in many cases, human evaluation is essential. However, this chapter focused on different approaches to automatic evaluation.</p>\n<p>This chapter starts with a discussion on why foundation models are harder to evaluate than traditional ML models. While many new evaluation techniques are being developed, investments in evaluation still lag behind investments in model and application development.</p>\n<p>Since many foundation models have a language model component, we zoomed into language modeling metrics, including perplexity and cross entropy. Many people I&#x27;ve talked to find these metrics confusing, so I included a section on how to interpret these metrics and leverage them in evaluation and data processing.</p>\n<p>This chapter then shifted the focus to the different approaches to evaluate open-ended responses, including functional correctness, similarity scores, and AI-as-a-judge. The first two evaluation approaches are exact, while AI-as-a-judge evaluation is subjective.</p>\n<p>Unlike exact evaluation, subjective metrics are highly dependent on the judge. Their scores need to be interpreted in the context of what judges are being used. Scores aimed to measure the same quality by different AI judges might not be comparable. AI judges, like all AI applications, should be iterated upon, meaning their judgments change. This makes them unreliable as benchmarks to track an application&#x27;s changes over time. While promising, AI judges should be supplemented with exact evaluation, human evaluation, or both.</p>\n<p>When evaluating models, you can evaluate each model independently, and then rank them by their scores. Alternatively, you can rank them using comparative signals: which of the two models is better? Comparative evaluation is common in sports, especially chess, and is gaining traction in AI evaluation. Both comparative evaluation and the post-training alignment process need preference signals, which are expensive to collect. This motivated the development of preference models: specialized AI judges that predict which response users prefer.</p>\n<p>While language modeling metrics and hand-designed similarity measurements have existed for some time, AI-as-a-judge and comparative evaluation have only gained adoption with the emergence of foundation models. Many teams are figuring out how to incorporate them into their evaluation pipelines. Figuring out how to build a reliable evaluation pipeline to evaluate open-ended applications is the topic of the next chapter.</p>",
+    "resources_html": "<p class=\"res-item\">1. <a href=\"https://www.anthropic.com/news/evaluating-ai-systems\" target=\"_blank\" rel=\"noopener\">Challenges in evaluating AI systems</a> (Anthropic, 2023)</p>\n<p>Discusses the limitations of common AI benchmarks to show why evaluation is so hard. 2. <a href=\"https://arxiv.org/abs/2211.09110\" target=\"_blank\" rel=\"noopener\">Holistic Evaluation of Language Models</a> (Liang et al., Stanford 2022) 3. <a href=\"https://arxiv.org/abs/2206.04615\" target=\"_blank\" rel=\"noopener\">Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models</a> (Google, 2022) 4. <a href=\"https://huggingface.co/spaces/open-llm-leaderboard/blog\" target=\"_blank\" rel=\"noopener\">Open-LLM performances are plateauing, let&#x27;s make the leaderboard steep again</a> (Hugging Face, 2024)</p>\n<p>Helpful explanation on why Hugging Face chose certain benchmarks for their leaderboard, which is a useful reference for selecting benchmarks for your personal leaderboard. 5. <a href=\"https://arxiv.org/abs/2306.05685\" target=\"_blank\" rel=\"noopener\">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</a> (Zheng et al., 2023) 6. <a href=\"https://eugeneyan.com/writing/evals/\" target=\"_blank\" rel=\"noopener\">LLM Task-Specific Evals that Do &amp; Don&#x27;t Work</a> (Eugene Yan, 2024) 7. <a href=\"https://hamel.dev/blog/posts/evals/\" target=\"_blank\" rel=\"noopener\">Your AI Product Needs Evals</a> (Hamel Hussain, 2024) 8. <a href=\"https://arxiv.org/abs/2305.10160\" target=\"_blank\" rel=\"noopener\">Stop Uploading Test Data in Plain Text: Practical Strategies for Mitigating Data Contamination by Evaluation Benchmarks</a> (Google &amp; AI2, May 2023) 9. <a href=\"https://github.com/alopatenko/LLMEvaluation\" target=\"_blank\" rel=\"noopener\">alopatenko/LLMEvaluation</a> (Andrei Lopatenko)</p>\n<p>A large collection of evaluation resources. The <a href=\"https://github.com/alopatenko/LLMEvaluation/blob/main/LLMEvaluation.pdf\" target=\"_blank\" rel=\"noopener\">slide deck</a> on eval has a lot of pointers too. 10. <a href=\"https://arxiv.org/abs/2212.09251\" target=\"_blank\" rel=\"noopener\">Discovering Language Model Behaviors with Model-Written Evaluations</a> (Perez et al., 2022)</p>\n<p>A fun paper that uses AI to discover novel AI behaviors. They use methods with various degrees of automation to generate evaluation sets for 154 diverse behaviors. 11. <a href=\"https://arxiv.org/abs/2309.01219\" target=\"_blank\" rel=\"noopener\">Siren&#x27;s Song in the AI Ocean: A Survey on Hallucination in Large Language Models</a> (Zhang et al., 2023) 12. OpenRouter&#x27;s <a href=\"https://openrouter.ai/rankings\" target=\"_blank\" rel=\"noopener\">LLM Rankings</a> shows the top open source models on their platform, ranked by their usage (token volume). This can help you evaluate open source models by popularity. I wish more inference services would publish statistics like this.</p>"
+  },
+  {
+    "num": 4,
+    "title": "Evaluate AI Systems",
+    "page": "159",
+    "sections": [
+      {
+        "title": "Evaluation Criteria",
+        "page": "160",
+        "subsections": [
+          {
+            "title": "Domain-Specific Capability",
+            "page": "161"
+          },
+          {
+            "title": "Generation Capability",
+            "page": "163"
+          },
+          {
+            "title": "Instruction-Following Capability",
+            "page": "172"
+          },
+          {
+            "title": "Cost and Latency",
+            "page": "177"
+          }
+        ]
+      },
+      {
+        "title": "Model Selection",
+        "page": "179",
+        "subsections": [
+          {
+            "title": "Model Selection Workflow",
+            "page": "179"
+          },
+          {
+            "title": "Model Build Versus Buy",
+            "page": "181"
+          },
+          {
+            "title": "Navigate Public Benchmarks",
+            "page": "191"
+          }
+        ]
+      },
+      {
+        "title": "Design Your Evaluation Pipeline",
+        "page": "200",
+        "subsections": [
+          {
+            "title": "Step 1. Evaluate All Components in a System",
+            "page": "200"
+          },
+          {
+            "title": "Step 2. Create an Evaluation Guideline",
+            "page": "202"
+          },
+          {
+            "title": "Step 3. Define Evaluation Methods and Data",
+            "page": "204"
+          }
+        ]
+      },
+      {
+        "title": "Summary",
+        "page": "208",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<center><img src=\"assets/evaluation-process.png\" width=\"600\"><br>\n<i>Figure 4-5. An overview of the evaluation workflow to evaluate models for your application.</i>\n</center>\n<br>\n<p>This is one of the hardest, but I believe one of the most important, topics that I&#x27;ve written about with regard to AI. Not having a reliable evaluation pipeline is one of the biggest blockers to AI adoption. While evaluation takes time, a reliable evaluation pipeline will enable you to reduce risks, discover opportunities to improve performance, and benchmark progresses, which will all save you time and headaches down the line.</p>\n<p>Given an increasing number of readily available foundation models, for most application developers, the challenge is no longer in developing models but in selecting the right models for your application. This chapter discussed a list of criteria that are often used to evaluate models for applications, and how they are evaluated. It discussed how to evaluate both domain-specific capabilities and generation capabilities, including factual consistency and safety. Many criteria to evaluate foundation models evolved from traditional NLP, including fluency, coherence, and faithfulness.</p>\n<p>To help answer the question of whether to host a model or to use a model API, this chapter outlined the pros and cons of each approach along seven axes, including data privacy, data lineage, performance, functionality, control, and cost. This decision, like all the build versus buy decisions, is unique to every team, depending on not only what the team needs but also what the team wants.</p>\n<p>This chapter also explored the thousands of available public benchmarks. Public benchmarks can help you weed out bad models, but won&#x27;t help you find the best models for your applications. Public benchmarks are also likely contaminated, as their data is included in the training data of many models. There are public leaderboards that aggregate multiple benchmarks to rank models, but how benchmarks are selected and aggregated is not a clear process. The lessons learned from public leaderboards are helpful for model selection, as model selection is akin to creating a private leaderboard to rank models based on your needs.</p>\n<p>This chapter ends with how to use all the evaluation techniques and criteria discussed in the last chapter and how to create an evaluation pipeline for your application. No perfect evaluation method exists. It&#x27;s impossible to capture the ability of a high-dimensional system using one- or few-dimensional scores. There are many limitations and biases associated with evaluating modern AI systems. However, this doesn&#x27;t mean we shouldn&#x27;t do it. Combining different methods and approaches can help mitigate many of these challenges.</p>\n<p>Even though dedicated discussions on evaluation end here, evaluation will come up again and again, not just throughout the book but also throughout your application development process. Chapter 6 explores on evaluating retrieval and agentic systems, while Chapters 7 and 9 focus on calculating a model&#x27;s memory usage, latency, and costs. Data quality verification is addressed in Chapter 8, and using user feedback to evaluate production applications in Chapter 10.</p>\n<p>With that, let&#x27;s move onto the actual model adaptation process, starting with a topic that many people associate with AI engineering: prompt engineering.</p>",
+    "resources_html": "<p class=\"res-item\">1. <a href=\"https://www.anthropic.com/news/evaluating-ai-systems\" target=\"_blank\" rel=\"noopener\">Challenges in evaluating AI systems</a> (Anthropic, 2023)</p>\n<p>Discusses the limitations of common AI benchmarks to show why evaluation is so hard. 2. <a href=\"https://arxiv.org/abs/2211.09110\" target=\"_blank\" rel=\"noopener\">Holistic Evaluation of Language Models</a> (Liang et al., Stanford 2022) 3. <a href=\"https://arxiv.org/abs/2206.04615\" target=\"_blank\" rel=\"noopener\">Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models</a> (Google, 2022) 4. <a href=\"https://huggingface.co/spaces/open-llm-leaderboard/blog\" target=\"_blank\" rel=\"noopener\">Open-LLM performances are plateauing, let&#x27;s make the leaderboard steep again</a> (Hugging Face, 2024)</p>\n<p>Helpful explanation on why Hugging Face chose certain benchmarks for their leaderboard, which is a useful reference for selecting benchmarks for your personal leaderboard. 5. <a href=\"https://arxiv.org/abs/2306.05685\" target=\"_blank\" rel=\"noopener\">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</a> (Zheng et al., 2023) 6. <a href=\"https://eugeneyan.com/writing/evals/\" target=\"_blank\" rel=\"noopener\">LLM Task-Specific Evals that Do &amp; Don&#x27;t Work</a> (Eugene Yan, 2024) 7. <a href=\"https://hamel.dev/blog/posts/evals/\" target=\"_blank\" rel=\"noopener\">Your AI Product Needs Evals</a> (Hamel Hussain, 2024) 8. <a href=\"https://arxiv.org/abs/2305.10160\" target=\"_blank\" rel=\"noopener\">Stop Uploading Test Data in Plain Text: Practical Strategies for Mitigating Data Contamination by Evaluation Benchmarks</a> (Google &amp; AI2, May 2023) 9. <a href=\"https://github.com/alopatenko/LLMEvaluation\" target=\"_blank\" rel=\"noopener\">alopatenko/LLMEvaluation</a> (Andrei Lopatenko)</p>\n<p>A large collection of evaluation resources. The <a href=\"https://github.com/alopatenko/LLMEvaluation/blob/main/LLMEvaluation.pdf\" target=\"_blank\" rel=\"noopener\">slide deck</a> on eval has a lot of pointers too. 10. <a href=\"https://arxiv.org/abs/2212.09251\" target=\"_blank\" rel=\"noopener\">Discovering Language Model Behaviors with Model-Written Evaluations</a> (Perez et al., 2022)</p>\n<p>A fun paper that uses AI to discover novel AI behaviors. They use methods with various degrees of automation to generate evaluation sets for 154 diverse behaviors. 11. <a href=\"https://arxiv.org/abs/2309.01219\" target=\"_blank\" rel=\"noopener\">Siren&#x27;s Song in the AI Ocean: A Survey on Hallucination in Large Language Models</a> (Zhang et al., 2023) 12. OpenRouter&#x27;s <a href=\"https://openrouter.ai/rankings\" target=\"_blank\" rel=\"noopener\">LLM Rankings</a> shows the top open source models on their platform, ranked by their usage (token volume). This can help you evaluate open source models by popularity. I wish more inference services would publish statistics like this.</p>"
+  },
+  {
+    "num": 5,
+    "title": "Prompt Engineering",
+    "page": "211",
+    "sections": [
+      {
+        "title": "Introduction to Prompting",
+        "page": "212",
+        "subsections": [
+          {
+            "title": "In-Context Learning: Zero-Shot and Few-Shot",
+            "page": "213"
+          },
+          {
+            "title": "System Prompt and User Prompt",
+            "page": "215"
+          },
+          {
+            "title": "Context Length and Context Efficiency",
+            "page": "218"
+          }
+        ]
+      },
+      {
+        "title": "Prompt Engineering Best Practices",
+        "page": "220",
+        "subsections": [
+          {
+            "title": "Write Clear and Explicit Instructions",
+            "page": "220"
+          },
+          {
+            "title": "Provide Sufficient Context",
+            "page": "223"
+          },
+          {
+            "title": "Break Complex Tasks into Simpler Subtasks",
+            "page": "224"
+          },
+          {
+            "title": "Give the Model Time to Think",
+            "page": "227"
+          },
+          {
+            "title": "Iterate on Your Prompts",
+            "page": "229"
+          },
+          {
+            "title": "Evaluate Prompt Engineering Tools",
+            "page": "230"
+          },
+          {
+            "title": "Organize and Version Prompts",
+            "page": "233"
+          }
+        ]
+      },
+      {
+        "title": "Defensive Prompt Engineering",
+        "page": "235",
+        "subsections": [
+          {
+            "title": "Proprietary Prompts and Reverse Prompt Engineering",
+            "page": "236"
+          },
+          {
+            "title": "Jailbreaking and Prompt Injection",
+            "page": "238"
+          },
+          {
+            "title": "Information Extraction",
+            "page": "243"
+          },
+          {
+            "title": "Defenses Against Prompt Attacks",
+            "page": "248"
+          }
+        ]
+      },
+      {
+        "title": "Summary",
+        "page": "251",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<center><img src=\"assets/prompt-anatomy.png\" width=\"600\"><br>\n<i>Figure 5-1. A simple example to show to anatomy of a prompt.</i>\n</center>\n<br>\n<p>Foundation models can do many things, but you must tell them exactly what you want. The process of crafting an instruction to get a model to do what you want is called prompt engineering. How much crafting is needed depends on how sensitive the model is to prompts. If a small change can cause a big change in the model&#x27;s response, more crafting will be necessary.</p>\n<p>You can think of prompt engineering as human\u2013AI communication. Anyone can communicate, but not everyone can communicate well. Prompt engineering is easy to get started, which misleads many into thinking that it&#x27;s easy to do it well.</p>\n<p>The first part of this chapter discusses the anatomy of a prompt, why in-context learning works, and best prompt engineering practices. Whether you&#x27;re communicating with AI or other humans, clear instructions with examples and relevant information are essential. Simple tricks like asking the model to slow down and think step by step can yield surprising improvements. Just like humans, AI models have their quirks and biases, which need to be considered for a productive relationship with them.</p>\n<p>Foundation models are useful because they can follow instructions. However, this ability also opens them up to prompt attacks in which bad actors get models to follow malicious instructions. This chapter discusses different attack approaches and potential defenses against them. As security is an ever-evolving cat-and-mouse game, no security measurements will be foolproof. Security risks will remain a significant roadblock for AI adoption in high-stakes environments.</p>\n<p>This chapter also discusses techniques to write better instructions to get models to do what you want. However, to accomplish a task, a model needs not just instructions but also relevant context. How to provide a model with relevant information will be discussed in the next chapter.</p>",
+    "resources_html": "<p>### Prompt engineering guides</p>\n<p class=\"res-item\">1. <a href=\"https://docs.google.com/spreadsheets/d/19jzLgRruG9kjUQNKtCg1ZjdD6l6weA6qRXG5zLIAhC8/edit#gid=1733615301\" target=\"_blank\" rel=\"noopener\">Anthropic&#x27;s Prompt Engineering Interactive Tutorial</a></p>\n<p>Practical, comprehensive, and fun. The Google Sheets-based interactive exercises make it easy to experiment with different prompts and see immediately what works and what doesn&#x27;t. I&#x27;m surprised other model providers don&#x27;t have similar interactive guides. 2. <a href=\"https://github.com/brexhq/prompt-engineering\" target=\"_blank\" rel=\"noopener\">Brex&#x27;s prompt engineering guide</a></p>\n<p>Contains a list of example prompts that Brex uses internally. 3. <a href=\"https://llama.meta.com/docs/how-to-guides/prompting/\" target=\"_blank\" rel=\"noopener\">Meta&#x27;s prompt engineering guide</a> 4. <a href=\"https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf\" target=\"_blank\" rel=\"noopener\">Google&#x27;s Gemini prompt engineering guide</a> 5. <a href=\"https://github.com/dair-ai/Prompt-Engineering-Guide\" target=\"_blank\" rel=\"noopener\">dair-ai/Prompt-Engineering-Guide</a> 6. Collections of prompt examples from <a href=\"https://platform.openai.com/examples\" target=\"_blank\" rel=\"noopener\">OpenAI</a>, <a href=\"https://docs.anthropic.com/en/prompt-library/library\" target=\"_blank\" rel=\"noopener\">Anthropic</a>, and <a href=\"https://console.cloud.google.com/vertex-ai/generative/prompt-gallery\" target=\"_blank\" rel=\"noopener\">Google</a>. 7. <a href=\"https://arxiv.org/abs/2303.03846\" target=\"_blank\" rel=\"noopener\">Larger language models do in-context learning differently </a> (Wei et al., 2023) 8. <a href=\"https://fchollet.substack.com/p/how-i-think-about-llm-prompt-engineering\" target=\"_blank\" rel=\"noopener\">How I think about LLM prompt engineering</a> (Francois Chollet, 2023)</p>\n<p>### Defensive prompt engineering</p>\n<p class=\"res-item\">1. <a href=\"https://wiki.offsecml.com/Welcome+to+the+Offensive+ML+Playbook\" target=\"_blank\" rel=\"noopener\">Offensive ML Playbook</a></p>\n<p>Has many resources on adversarial ML and how to defend your ML systems against attacks, including both text and image attacks 2. <a href=\"https://arxiv.org/abs/2404.13208\" target=\"_blank\" rel=\"noopener\">The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions</a> (OpenAI, 2024)</p>\n<p>A good paper on how OpenAI trained a model to imbue prompt hierarchy to protect a model from jailbreaking. 3. <a href=\"https://arxiv.org/abs/2302.12173\" target=\"_blank\" rel=\"noopener\">Not what you&#x27;ve signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection</a> (Greshake et al., 2023)</p>\n<p>Has a great list of examples of indirect prompt injections in the appendix. 4. <a href=\"https://arxiv.org/abs/2302.05733\" target=\"_blank\" rel=\"noopener\">Exploiting Programmatic Behavior of LLMs: Dual-Use Through Standard Security Attacks</a> (Kang et al., 2023) 5. <a href=\"https://arxiv.org/abs/2311.17035\" target=\"_blank\" rel=\"noopener\">Scalable Extraction of Training Data from (Production) Language Models</a> (Nasr et al., 2023) 6. <a href=\"https://arxiv.org/abs/2401.06373\" target=\"_blank\" rel=\"noopener\">How Johnny Can Persuade LLMs to Jailbreak Them: Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs</a> (Zeng et al., 2024) 7. <a href=\"https://llmsecurity.net/\" target=\"_blank\" rel=\"noopener\">LLM Security</a>: A collection of LLM security papers. 8. Tools that help automate security probing include <a href=\"https://github.com/Azure/PyRIT\" target=\"_blank\" rel=\"noopener\">PyRIT</a>, <a href=\"https://github.com/leondz/garak/\" target=\"_blank\" rel=\"noopener\">Garak</a>, <a href=\"https://github.com/CHATS-lab/persuasive_jailbreaker\" target=\"_blank\" rel=\"noopener\">persuasive_jailbreaker</a>, <a href=\"https://arxiv.org/abs/2309.10253\" target=\"_blank\" rel=\"noopener\">GPTFUZZER</a>, and <a href=\"https://arxiv.org/abs/2307.08715\" target=\"_blank\" rel=\"noopener\">MasterKey</a>. 9. <a href=\"https://arxiv.org/abs/2312.06674\" target=\"_blank\" rel=\"noopener\">Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations</a> (Meta, 2023) 10. <a href=\"https://owaspai.org/docs/ai_security_overview/#threat-model\" target=\"_blank\" rel=\"noopener\">AI Security Overview</a> (AI Exchange)</p>"
+  },
+  {
+    "num": 6,
+    "title": "RAG and Agents",
+    "page": "253",
+    "sections": [
+      {
+        "title": "RAG",
+        "page": "253",
+        "subsections": [
+          {
+            "title": "RAG Architecture",
+            "page": "256"
+          },
+          {
+            "title": "Retrieval Algorithms",
+            "page": "257"
+          },
+          {
+            "title": "Retrieval Optimization",
+            "page": "268"
+          },
+          {
+            "title": "RAG Beyond Texts",
+            "page": "273"
+          }
+        ]
+      },
+      {
+        "title": "Agents",
+        "page": "275",
+        "subsections": [
+          {
+            "title": "Agent Overview",
+            "page": "276"
+          },
+          {
+            "title": "Tools",
+            "page": "278"
+          },
+          {
+            "title": "Planning",
+            "page": "281"
+          },
+          {
+            "title": "Agent Failure Modes and Evaluation",
+            "page": "298"
+          }
+        ]
+      },
+      {
+        "title": "Memory",
+        "page": "300",
+        "subsections": []
+      },
+      {
+        "title": "Summary",
+        "page": "305",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<center><img src=\"assets/rag-architecture.png\" width=\"700\"><br>\n<i>Figure 6-3. A high-level view of how an embedding-based, or semantic, retriever works.</i>\n</center>\n<br>\n<p>Given the popularity of RAG and the potential of agents, early readers have mentioned that this is the chapter they&#x27;re most excited about.</p>\n<p>This chapter started with RAG, the pattern that emerged first between the two. Many tasks require extensive background knowledge that often exceeds a model&#x27;s context window. For example, code copilots might need access to entire codebases, and research assistants may need to analyze multiple books. Originally developed to overcome a model&#x27;s context limitations, RAG also enables more efficient use of information, improving response quality while reducing costs. From the early days of foundation models, it was clear that the RAG pattern would be immensely valuable for a wide range of applications, and it has since been rapidly adopted across both consumer and enterprise use cases.</p>\n<p>RAG employs a two-step process. It first retrieves relevant information from external memory and then uses this information to generate more accurate responses. The success of a RAG system depends on the quality of its retriever. Term-based retrievers, such as Elasticsearch and BM25, are much lighter to implement and can provide strong baselines. Embedding-based retrievers are more computationally intensive but have the potential to outperform term-based algorithms.</p>\n<p>Embedding-based retrieval is powered by vector search, which is also the backbone of many core internet applications such as search and recommender systems. Many vector search algorithms developed for these applications can be used for RAG.</p>\n<p>The RAG pattern can be seen as a special case of agent where the retriever is a tool the model can use. Both patterns allow a model to circumvent its context limitation and stay more up-to-date, but the agentic pattern can do even more than that. An agent is defined by its environment and the tools it can access. In an AI-powered agent, AI is the planner that analyzes its given task, considers different solutions, and picks the most promising one. A complex task can require many steps to solve, which requires a powerful model to plan. A model&#x27;s ability to plan can be augmented with reflection and a memory system to help it keep track of its progress.</p>\n<p>The more tools you give a model, the more capabilities the model has, enabling it to solve more challenging tasks. However, the more automated the agent becomes, the more catastrophic its failures. Tool use exposes agents to many security risks discussed in the Chapter 5. For agents to work in the real world, rigorous defensive mechanisms need to be put in place.</p>\n<p>Both RAG and agents work with a lot of information, which often exceeds the maximum context length of the underlying model. This necessitates the introduction of a memory system for managing and using all the information a model has. This chapter ended with a short discussion on what this component looks like.</p>\n<p>RAG and agents are both prompt-based methods, as they influence the model&#x27;s quality solely through inputs without modifying the model itself. While they can enable many incredible applications, modifying the underlying model can open up even more possibilities. How to do so will be the topic of the next chapter.</p>",
+    "resources_html": "<p>### RAG</p>\n<p class=\"res-item\">1. <a href=\"https://arxiv.org/abs/1704.00051\" target=\"_blank\" rel=\"noopener\">Reading Wikipedia to Answer Open-Domain Questions</a> (Chen et al., 2017)</p>\n<p>Introduces the RAG pattern to help with knowledge-intensive tasks such as question answering. 2. <a href=\"https://arxiv.org/abs/2005.11401\" target=\"_blank\" rel=\"noopener\">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a> (Lewis et al., 2020) 3. <a href=\"https://arxiv.org/abs/2312.10997\" target=\"_blank\" rel=\"noopener\">Retrieval-Augmented Generation for Large Language Models: A Survey</a> (Gao et al., 2023) 4. <a href=\"https://www.anthropic.com/news/contextual-retrieval\" target=\"_blank\" rel=\"noopener\">Introducing Contextual Retrieval</a> (Anthropic, 2024)</p>\n<p>An important topic not discussed nearly enough is how to prepare data for RAG system. This post discusses several techniques for preparing data for RAG and some very practical on when to use RAG and when to use long context. 5. Chunking tutorials from <a href=\"https://www.pinecone.io/learn/chunking-strategies/\" target=\"_blank\" rel=\"noopener\">Pinecone</a> and <a href=\"https://js.langchain.com/v0.1/docs/modules/data_connection/document_transformers/\" target=\"_blank\" rel=\"noopener\">Langchain</a> 6. <a href=\"https://www.youtube.com/watch?v=8OJC21T2SL4\" target=\"_blank\" rel=\"noopener\">The 5 Levels Of Text Splitting For Retrieval</a> (Greg Kamradt, 2024) 7. <a href=\"https://www.confluent.io/blog/chatgpt-and-streaming-data-for-real-time-generative-ai/\" target=\"_blank\" rel=\"noopener\">GPT-4 + Streaming Data = Real-Time Generative AI</a> (Confluent, 2023)</p>\n<p>A great post detailing the pattern of retrieving real-time data in RAG applications. 8. <a href=\"https://zilliz.com/learn/vector-index\" target=\"_blank\" rel=\"noopener\">Everything You Need to Know about Vector Index Basics</a> (Zilliz, 2023)</p>\n<p>An excellent series on vector search and vector database. 9. <a href=\"https://www.shortwave.com/blog/deep-dive-into-worlds-smartest-email-ai/\" target=\"_blank\" rel=\"noopener\">A deep dive into the world&#x27;s smartest email AI</a> (Hiranya Jayathilaka, 2023)</p>\n<p>If you can ignore the title, the post is a detailed case study on using the RAG pattern to build an email assistant. 10. [Book] <a href=\"https://nlp.stanford.edu/IR-book/information-retrieval-book.html\" target=\"_blank\" rel=\"noopener\">Introduction to Information Retrieval</a> (Manning, Raghavan, and Sch\u00fctze, 2008)</p>\n<p>Information retrieval is the backbone of RAG. This book is for those who want to dive really, really deep into different techniques for organizing and querying text data.</p>\n<p>### Agents</p>\n<p class=\"res-item\">1. [[2304.09842] Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models](https://arxiv.org/abs/2304.09842) (Lu et al., 2023)</p>\n<p>My favorite study on LLM planners, how they use tools, and their failure modes. An interesting finding is that different LLMs have different tool preferences. 2. <a href=\"https://arxiv.org/abs/2304.03442\" target=\"_blank\" rel=\"noopener\">Generative Agents: Interactive Simulacra of Human Behavior</a> (Park et al., 2023) 3. <a href=\"https://arxiv.org/abs/2302.04761\" target=\"_blank\" rel=\"noopener\">Toolformer: Language Models Can Teach Themselves to Use Tools</a> (Schick et al., 2023) 4. <a href=\"https://gorilla.cs.berkeley.edu/leaderboard.html\" target=\"_blank\" rel=\"noopener\">Berkeley Function Calling Leaderboard</a> and the paper <a href=\"https://arxiv.org/abs/2305.15334\" target=\"_blank\" rel=\"noopener\">Gorilla: Large Language Model Connected with Massive APIs</a> (Patil et al., 2023)</p>\n<p>The list of 4 common mistakes in function calling made by ChatGPT is interesting. 5. <a href=\"https://github.com/THUDM/AgentBench\" target=\"_blank\" rel=\"noopener\">THUDM/AgentBench: A Benchmark to Evaluate LLMs as Agents</a>  (ICLR&#x27;24) 6. <a href=\"https://arxiv.org/abs/2112.09332\" target=\"_blank\" rel=\"noopener\">WebGPT: Browser-assisted question-answering with human feedback</a> (Nakano et al., 2021) 7. <a href=\"https://arxiv.org/abs/2210.03629\" target=\"_blank\" rel=\"noopener\">ReAct: Synergizing Reasoning and Acting in Language Models</a> (Yao et al., 2022) 8. <a href=\"https://arxiv.org/abs/2303.11366\" target=\"_blank\" rel=\"noopener\">Reflexion: Language Agents with Verbal Reinforcement Learning</a> (Shinn et al., 2023) 9. <a href=\"https://arxiv.org/abs/2305.16291\" target=\"_blank\" rel=\"noopener\">Voyager: An Open-Ended Embodied Agent with Large Language Models</a> (Wang et al., 2023) 10. [Book] <a href=\"https://www.amazon.com/Artificial-Intelligence-A-Modern-Approach/dp/0134610997\" target=\"_blank\" rel=\"noopener\">Artificial Intelligence: A Modern Approach</a> (Russell and Norvig, 4th edition is in 2020)</p>\n<p>Planning is closely related to search, and this classic book has a several in-depth chapters on search.</p>"
+  },
+  {
+    "num": 7,
+    "title": "Finetuning",
+    "page": "307",
+    "sections": [
+      {
+        "title": "Finetuning Overview",
+        "page": "308",
+        "subsections": []
+      },
+      {
+        "title": "When to Finetune",
+        "page": "311",
+        "subsections": [
+          {
+            "title": "Reasons to Finetune",
+            "page": "311"
+          },
+          {
+            "title": "Reasons Not to Finetune",
+            "page": "312"
+          },
+          {
+            "title": "Finetuning and RAG",
+            "page": "316"
+          }
+        ]
+      },
+      {
+        "title": "Memory Bottlenecks",
+        "page": "319",
+        "subsections": [
+          {
+            "title": "Backpropagation and Trainable Parameters",
+            "page": "320"
+          },
+          {
+            "title": "Memory Math",
+            "page": "322"
+          },
+          {
+            "title": "Numerical Representations",
+            "page": "325"
+          },
+          {
+            "title": "Quantization",
+            "page": "328"
+          }
+        ]
+      },
+      {
+        "title": "Finetuning Techniques",
+        "page": "332",
+        "subsections": [
+          {
+            "title": "Parameter-Efficient Finetuning",
+            "page": "333"
+          },
+          {
+            "title": "Model Merging and Multi-Task Finetuning",
+            "page": "347"
+          },
+          {
+            "title": "Finetuning Tactics",
+            "page": "357"
+          }
+        ]
+      },
+      {
+        "title": "Summary",
+        "page": "361",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<center><img src=\"assets/rag-vs-finetune.png\" width=\"700\"><br>\n<i>Figure 7-3. Example application development flows. After simple retrieval (such as term-based retrieval), whether to experiment with more complex retrieval (such as hybrid search) or finetuning depends on each application and its failure modes.</i>\n</center>\n<br>\n<p>Outside of the evaluation chapters, finetuning has been the most challenging chapter to write. It touched on a wide range of concepts, both old (transfer learning) and new (PEFT), fundamental (low-rank factorization) and experimental (model merging), mathematical (memory calculation) and tactical (hyperparameter tuning). Arranging all these different aspects into a coherent structure while keeping them accessible was difficult.</p>\n<p>The process of finetuning itself isn&#x27;t hard. Many finetuning frameworks handle the training process for you. These frameworks can even suggest common finetuning methods with sensible default hyperparameters.</p>\n<p>However, the context surrounding finetuning is complex. It starts with whether you should even finetune a model. This chapter started with the reasons for finetuning and the reasons for not finetuning. It also discussed one question that I have been asked many times: when to finetune and when to do RAG.</p>\n<p>In its early days, finetuning was similar to pre-training\u2014both involved updating the model&#x27;s entire weights. However, as models increased in size, full finetuning became impractical for most practitioners. The more parameters to update during finetuning, the more memory finetuning needs. Most practitioners don&#x27;t have access to sufficient resources (hardware, time, and data) to do full finetuning with foundation models.</p>\n<p>Many finetuning techniques have been developed with the same motivation: to achieve strong performance on a minimal memory footprint. For example, PEFT reduces finetuning&#x27;s memory requirements by reducing the number of trainable parameters. Quantized training, on the other hand, mitigates this memory bottleneck by reducing the number of bits needed to represent each value.</p>\n<p>After giving an overview of PEFT, the chapter zoomed into LoRA\u2014why it works and how it works. LoRA has many properties that make it popular among practitioners. On top of being parameter-efficient and data-efficient, it&#x27;s also modular, making it much easier to serve and combine multiple LoRA models.</p>\n<p>The idea of combining finetuned models brought the chapter to model merging, whose goal is to combine multiple models into one model that works better than these models separately. This chapter discussed the many use cases of model merging, from on-device deployment to model upscaling, and general approaches to model merging.</p>\n<p>A comment I often hear from practitioners is that finetuning is easy, but getting data for finetuning is hard. Obtaining high-quality annotated data, especially instruction data, is challenging. The next chapter will dive into these challenges.</p>",
+    "resources_html": "<p class=\"res-item\">1. <a href=\"https://docs.google.com/document/d/1rqj7dkuvl7Byd5KQPUJRxc19BJt8wo0yHNwK84KfU3Q/edit\" target=\"_blank\" rel=\"noopener\">Best practices for fine-tuning GPT-3 to classify text</a> (OpenAI)</p>\n<p>A draft from OpenAI. While this guide focuses on GPT-3 but many techniques are applicable to full finetuning in general. It explains how GPT-3 finetuning works, how to prepare training data, how to evaluate your model, and common mistakes 2. <a href=\"https://cameronrwolfe.substack.com/p/easily-train-a-specialized-llm-peft\" target=\"_blank\" rel=\"noopener\">Easily Train a Specialized LLM: PEFT, LoRA, QLoRA, LLaMA-Adapter, and More</a> (Cameron R. Wolfe, 2023)</p>\n<p>For more general parameter-efficient finetuning, &#x27;s 7000-word, well-researched article on the evolution of adapter-based finetuning, why LoRA has is so popular and why it works 3. <a href=\"https://arxiv.org/abs/2312.05934\" target=\"_blank\" rel=\"noopener\">Fine-Tuning or Retrieval? Comparing Knowledge Injection in LLMs</a> (Ovadia et al., 2024)</p>\n<p>Interesting results to help answering the question: finetune or RAG? 4. <a href=\"https://arxiv.org/abs/1902.00751\" target=\"_blank\" rel=\"noopener\">Parameter-Efficient Transfer Learning for NLP</a> (Houlsby et al., 2019)</p>\n<p>The paper introducing the concept of PEFT. 5. <a href=\"https://arxiv.org/abs/2106.09685\" target=\"_blank\" rel=\"noopener\">LoRA: Low-Rank Adaptation of Large Language Models</a> (Hu et al., 2021)</p>\n<p>A must-read. 6. <a href=\"https://arxiv.org/abs/2305.14314\" target=\"_blank\" rel=\"noopener\">QLoRA: Efficient Finetuning of Quantized LLMs</a> (Dettmers et al., 2023) 7. <a href=\"https://www.anyscale.com/blog/direct-preference-optimization-with-synthetic-data\" target=\"_blank\" rel=\"noopener\">Direct Preference Optimization with Synthetic Data on Anyscale</a> (2024) 8. <a href=\"https://kipp.ly/transformer-inference-arithmetic/\" target=\"_blank\" rel=\"noopener\">Transformer Inference Arithmetic</a> (kipply, 2022) 9. <a href=\"https://blog.eleuther.ai/transformer-math/\" target=\"_blank\" rel=\"noopener\">Transformer Math 101</a> (EleutherAI, 2023): Memory footprint calculation, focusing more on training. 10. <a href=\"https://arxiv.org/abs/2303.15647\" target=\"_blank\" rel=\"noopener\">Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning</a> (Lialin et al., 2023)</p>\n<p>An comprehensive study of different finetuning methods. Not all techniques are relevant today, though. 11. <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/14vnfh2/my_experience_on_starting_with_fine_tuning_llms/\" target=\"_blank\" rel=\"noopener\">My experience on starting with fine tuning LLMs with custom data : r/LocalLLaMA</a> (2023) 12. <a href=\"https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html\" target=\"_blank\" rel=\"noopener\">Train With Mixed Precision</a> (NVIDIA Docs)</p>"
+  },
+  {
+    "num": 8,
+    "title": "Dataset Engineering",
+    "page": "363",
+    "sections": [
+      {
+        "title": "Data Curation",
+        "page": "365",
+        "subsections": [
+          {
+            "title": "Data Quality",
+            "page": "368"
+          },
+          {
+            "title": "Data Coverage",
+            "page": "370"
+          },
+          {
+            "title": "Data Quantity",
+            "page": "372"
+          },
+          {
+            "title": "Data Acquisition and Annotation",
+            "page": "377"
+          }
+        ]
+      },
+      {
+        "title": "Data Augmentation and Synthesis",
+        "page": "380",
+        "subsections": [
+          {
+            "title": "Why Data Synthesis",
+            "page": "381"
+          },
+          {
+            "title": "Traditional Data Synthesis Techniques",
+            "page": "383"
+          },
+          {
+            "title": "AI-Powered Data Synthesis",
+            "page": "386"
+          },
+          {
+            "title": "Model Distillation",
+            "page": "395"
+          }
+        ]
+      },
+      {
+        "title": "Data Processing",
+        "page": "396",
+        "subsections": [
+          {
+            "title": "Inspect Data",
+            "page": "397"
+          },
+          {
+            "title": "Deduplicate Data",
+            "page": "399"
+          },
+          {
+            "title": "Clean and Filter Data",
+            "page": "401"
+          },
+          {
+            "title": "Format Data",
+            "page": "401"
+          }
+        ]
+      },
+      {
+        "title": "Summary",
+        "page": "403",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<center><img src=\"assets/model-perf-dataset.png\" width=\"600\"><br>\n<i>Figure 8-3. The performance gain curve with different dataset sizes can help you esti\u2010 mate the impact of additional training examples on your model\u2019s performance.</i>\n</center>\n<br>\n<p>Even though the actual process of creating training data is incredibly intricate, the principles of creating a dataset are surprisingly straightforward. To build a dataset to train a model, you start by thinking through the behaviors you want your model to learn and then design a dataset to show these behaviors. Due to the importance of data, teams are introducing dedicated data roles responsible for acquiring appropriate datasets while ensuring privacy and compliance.</p>\n<p>What data you need depends not only on your use case but also on the training phase. Pre-training requires different data from instruction finetuning and preferred finetuning. However, dataset design across training phases shares the same three core criteria: quality, coverage, and quantity.</p>\n<p>While how much data a model is trained on is what has been grabbing headlines, having high-quality data with sufficient coverage is just as important. A small amount of high-quality data can outperform a large amount of noisy data. Similarly, many teams have found that increasing the diversity of their datasets is a key to improving their models&#x27; performance.</p>\n<p>Due to the challenge of acquiring high-quality data, many teams have turned to synthetic data. While generating data programmatically has long been a goal, it wasn&#x27;t until AI could create realistic, complex data that synthetic data became a practical solution for many more use cases. This chapter discussed different techniques for data synthesis with a deep dive into synthesizing instruction data for finetuning.</p>\n<p>Just like real data, synthetic data must be evaluated to ensure its quality before being used to train models. Evaluating AI-generated data is just as tricky as evaluating other AI outputs, and people are more likely to use generated data that they can reliably evaluate.</p>\n<p>Data is hard because many steps in dataset creation aren&#x27;t easily automatable. It&#x27;s hard to annotate data, but it&#x27;s even harder to create annotation guidelines. It&#x27;s hard to automate data generation, but it&#x27;s even harder to automate verifying it. While data synthesis helps generate more data, you can&#x27;t automate thinking through what data you want. You can&#x27;t easily automate annotation guidelines. You can&#x27;t automate paying attention to details.</p>\n<p>Challenging problems lead to creative solutions. One thing that stood out to me when doing research for this chapter is how much creativity is involved in dataset design. There are so many ways people construct and evaluate data. I hope that the range of data synthesis and verification techniques discussed in this chapter will give you inspiration for how to design your dataset.</p>\n<p>Let&#x27;s say that you&#x27;ve curated a wonderful dataset that allows you to train an amazing model, how should you serve this model? The next chapter will discuss how to optimize inference for latency and cost.</p>",
+    "resources_html": "<p class=\"res-item\">1. <a href=\"https://www.grammarly.com/blog/engineering/annotation-best-practices/\" target=\"_blank\" rel=\"noopener\">Annotation Best Practices for Building High-Quality Datasets</a> (Grammarly, 2022) 2. <a href=\"https://arxiv.org/abs/2210.11416\" target=\"_blank\" rel=\"noopener\">Scaling Instruction-Finetuned Language Models</a> (Chung et al., 2022) 3. <a href=\"https://arxiv.org/abs/2305.17493\" target=\"_blank\" rel=\"noopener\">The Curse of Recursion: Training on Generated Data Makes Models Forget</a> (Shumailov et al., 2023) 4. <a href=\"https://arxiv.org/abs/2407.21783\" target=\"_blank\" rel=\"noopener\">The Llama 3 Herd of Models</a> (Meta, 2024)</p>\n<p>The whole paper is good, but the section on synthetic data generation and verification is especially important. 5. <a href=\"https://arxiv.org/abs/2304.03277\" target=\"_blank\" rel=\"noopener\">Instruction Tuning with GPT-4</a> (Peng et al., 2023)</p>\n<p>Use GPT-4 to generate instruction-following data for LLM finetuning. 6. <a href=\"https://arxiv.org/abs/2404.07503\" target=\"_blank\" rel=\"noopener\">Best Practices and Lessons Learned on Synthetic Data for Language Models</a> (Liu et al., DeepMind 2024) 7. [UltraChat] <a href=\"https://arxiv.org/abs/2305.14233\" target=\"_blank\" rel=\"noopener\">Enhancing Chat Language Models by Scaling High-quality Instructional Conversations</a> (Ding et al., 2023) 8. <a href=\"https://arxiv.org/abs/2107.06499\" target=\"_blank\" rel=\"noopener\">Deduplicating Training Data Makes Language Models Better</a> (Lee et al., 2021) 9. <a href=\"https://www.fast.ai/posts/2023-09-04-learning-jumps/\" target=\"_blank\" rel=\"noopener\">Can LLMs learn from a single example?</a> (Jeremy Howard and Jonathan Whitaker, 2023)</p>\n<p>Fun experiment to show that it&#x27;s possible to see model improvement with just one training example. 10. <a href=\"https://arxiv.org/abs/2305.11206\" target=\"_blank\" rel=\"noopener\">LIMA: Less Is More for Alignment</a> (Zhou et al., 2023)</p>\n<p>### Public datasets</p>\n<p>Here are a few resources where you can look for publicly available datasets. While you should take advantage of available data, you should never fully trust it. Data needs to be thoroughly inspected and validated.</p>\n<p>Always check a dataset&#x27;s license before using it. Try your best to understand where the data comes from. Even if a dataset has a license that allows commercial use, it&#x27;s possible that part of it comes from a source that doesn&#x27;t.</p>\n<p class=\"res-item\">1. <a href=\"https://huggingface.co/datasets\" target=\"_blank\" rel=\"noopener\">Hugging Face</a> and <a href=\"https://www.kaggle.com/datasets?fileType=csv\" target=\"_blank\" rel=\"noopener\">Kaggle</a> each host hundreds of thousands of datasets. 2. Google has a wonderful and underrated <a href=\"https://datasetsearch.research.google.com/\" target=\"_blank\" rel=\"noopener\">Dataset Search</a>. 3. Governments are often great providers of open data. <a href=\"https://data.gov\" target=\"_blank\" rel=\"noopener\">Data.gov</a> hosts approximately hundreds of thousands of datasets, and <a href=\"https://data.gov.in\" target=\"_blank\" rel=\"noopener\">data.gov.in</a> hosts tens of thousands. 4. University of Michigan&#x27;s <a href=\"https://www.icpsr.umich.edu/web/pages/ICPSR/index.html\" target=\"_blank\" rel=\"noopener\">Institute for Social Research</a> ICPSR has data from tens of thousands of social studies. 5. <a href=\"https://archive.ics.uci.edu/datasets\" target=\"_blank\" rel=\"noopener\">UC Irvine&#x27;s Machine Learning Repository</a> and <a href=\"https://www.openml.org/search?type=data&amp;sort=runs&amp;status=active\" target=\"_blank\" rel=\"noopener\">OpenML</a> are two older dataset repositories, each hosting several thousands of datasets. 6. The <a href=\"https://www.opendatanetwork.com/\" target=\"_blank\" rel=\"noopener\">Open Data Network</a> lets you search among tens of thousands of datasets. 7. Cloud service providers often host a small collection of open datasets;, the most notable one is <a href=\"https://registry.opendata.aws/\" target=\"_blank\" rel=\"noopener\">AWS&#x27;s Open Data</a>. 8. ML frameworks often have small pre-built datasets that you can load while using the framework, such as <a href=\"https://www.tensorflow.org/datasets/catalog/overview#all_datasets\" target=\"_blank\" rel=\"noopener\">TensorFlow datasets</a>. 9. Some evaluation harness tools host evaluation benchmark datasets that are sufficiently large for PEFT finetuning. For example, Eleuther AI&#x27;s <a href=\"https://github.com/EleutherAI/lm-evaluation-harness\" target=\"_blank\" rel=\"noopener\">lm-evaluation-harness</a> hosts 400+ benchmark datasets, averaging 2,000+ examples per dataset. 10. The <a href=\"https://snap.stanford.edu/data/\" target=\"_blank\" rel=\"noopener\">Stanford Large Network Dataset Collection</a> is a great repository for graph datasets.</p>"
+  },
+  {
+    "num": 9,
+    "title": "Inference Optimization",
+    "page": "405",
+    "sections": [
+      {
+        "title": "Understanding Inference Optimization",
+        "page": "406",
+        "subsections": [
+          {
+            "title": "Inference Overview",
+            "page": "406"
+          },
+          {
+            "title": "Inference Performance Metrics",
+            "page": "412"
+          },
+          {
+            "title": "AI Accelerators",
+            "page": "419"
+          }
+        ]
+      },
+      {
+        "title": "Inference Optimization",
+        "page": "426",
+        "subsections": [
+          {
+            "title": "Model Optimization",
+            "page": "426"
+          },
+          {
+            "title": "Inference Service Optimization",
+            "page": "440"
+          }
+        ]
+      },
+      {
+        "title": "Summary",
+        "page": "447",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<center><img src=\"assets/inference-service.png\" width=\"500\"><br>\n<i>Figure 9-1. A simple inference service.</i>\n</center>\n<br>\n<p>A model&#x27;s usability depends heavily on its inference cost and latency. Cheaper inference makes AI-powered decisions more affordable, while faster inference enables the integration of AI into more applications. Given the massive potential impact of inference optimization, it has attracted a remarkable number of talented individuals who continually come up with innovative approaches.</p>\n<p>Before we start making things more efficient, it&#x27;s necessary to understand how efficiency is measured. This chapter started with common efficiency metrics for latency, throughput, and utilization. For language model-based inference, latency can be broken into <strong>time to first token</strong> (TTFT), which is influenced by the prefilling phase, and <strong>time per output token</strong> (TPOT), which is influenced by the decoding phase. Throughput metrics are directly related to cost. There&#x27;s a tradeoff between latency and throughput. You can potentially reduce cost if you&#x27;re okay with increased latency, and reducing latency often involves increasing cost.</p>\n<p>How efficiently a model can run depends on the hardware it is run on. For this reason, this chapter also provided a quick overview of AI hardware and what it takes to optimize models on different accelerators.</p>\n<p>This chapter then continued with different techniques for inference optimization. Given the availability of model APIs, most application developers will use these APIs with their built-in optimization instead of implementing these techniques themselves. While these techniques might not be relevant to all application developers, I believe that understanding what techniques are possible can be helpful for evaluating the efficiency of model APIs.</p>\n<p>In this chapter, I focused on optimization at the model level and the inference service level. Model-level optimization often requires changing the model itself, which can lead to changes in the model behaviors. Inference service-level optimization, on the other hand, typically keeps the model intact and only changes how it&#x27;s served.</p>\n<p>Model-level techniques include model-agnostic techniques like quantization and distillation. Different model architectures require their own optimization. For example, because a key bottleneck of transformer models is in the attention mechanism, many optimization techniques involve making attention more efficient, including KV cache management and writing attention kernels. A big bottleneck for an autoregressive language model is in its autoregressive decoding process, and consequently, many techniques have been developed to address it, too.</p>\n<p>Inference service-level techniques include various batching and parallelism strategies. There are also techniques developed especially for autoregressive language models, including prefilling/decoding decoupling and prompt caching.</p>\n<p>The choice of optimization techniques depends on your workloads. For example, KV caching is significantly more important for workloads with long contexts than those with short contexts. Prompt caching, on the other hand, is crucial for workloads involving long, overlapping prompt segments or multi-turn conversations. The choice also depends on your performance requirements. For instance, if low latency is a higher priority than cost, you might want to scale up replica parallelism. While more replicas require additional machines, each machine handles fewer requests, allowing it to allocate more resources per request and, thus, improve response time.</p>\n<p>However, across various use cases, the most impactful techniques are typically quantization (which generally works well across models), tensor parallelism (which both reduces latency and enables serving larger models), replica parallelism (which is relatively straightforward to implement), and attention mechanism optimization (which can significantly accelerate transformer models).</p>\n<p>Inference optimization concludes the list of model adaptation techniques covered in this book. The next chapter will explore how to integrate these techniques into a cohesive system.</p>",
+    "resources_html": "<p class=\"res-item\">1. <a href=\"https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/\" target=\"_blank\" rel=\"noopener\">Mastering LLM Techniques: Inference Optimization</a> (NVIDIA Technical Blog, 2023)</p>\n<p>A very good overview of different optimization techniques. 2. <a href=\"https://pytorch.org/blog/accelerating-generative-ai-2/\" target=\"_blank\" rel=\"noopener\">Accelerating Generative AI with PyTorch II: GPT, Fast</a> (Pytorch, 2023)</p>\n<p>A good case study with the performance improvement achieved from different techniques. 3. <a href=\"https://arxiv.org/pdf/2211.05102\" target=\"_blank\" rel=\"noopener\">Efficiently Scaling Transformer Inference</a> (Pope et al., 2022)</p>\n<p>A highly technical but really good paper on inference paper from Jeff Dean&#x27;s team. My favorite is the section discussing what to focus for different tradeoffs (e.g. latency vs. cost). 4. <a href=\"https://research.character.ai/optimizing-inference/\" target=\"_blank\" rel=\"noopener\">Optimizing AI Inference at Character.AI</a> (Character.AI, 2024)</p>\n<p>This is less of a technical paper and more of a &quot;Look, I can do this&quot; paper. It&#x27;s pretty impressive what the Character.AI technical team was able to achieve. This post discusses attention design, cache optimization, and int8 training. 5. [Video] <a href=\"https://www.youtube.com/watch?v=v_q2JTIqE20&amp;ab_channel=MLOpsLearners\" target=\"_blank\" rel=\"noopener\">GPU optimization workshop with OpenAI, NVIDIA, PyTorch, and Voltron Data</a> 6. [Video] <a href=\"https://www.youtube.com/watch?v=XPArX12gXVE\" target=\"_blank\" rel=\"noopener\">Essence VC Q1 Virtual Conference: LLM Inference</a> (with vLLM, TVM, and Modal Labs) 7. <a href=\"https://www.omrimallis.com/posts/techniques-for-kv-cache-optimization/\" target=\"_blank\" rel=\"noopener\">Techniques for KV Cache Optimization in Large Language Models</a> (Omri Mallis, 2024)</p>\n<p>An excellent post explaining KV cache optimization, one of the most memory-heavy parts of transformer inference.</p>\n<p><a href=\"https://medium.com/@joaolages/kv-caching-explained-276520203249\" target=\"_blank\" rel=\"noopener\">Jo\u00e3o Lages</a> has an excellent visualization of KV cache.</p>\n<p class=\"res-item\">8. <a href=\"https://arxiv.org/abs/2302.01318\" target=\"_blank\" rel=\"noopener\">Accelerating Large Language Model Decoding with Speculative Sampling</a> (DeepMind, 2023) 9. <a href=\"https://arxiv.org/abs/2401.09670\" target=\"_blank\" rel=\"noopener\">DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving</a> (Zhong et al., 2024) 10. <a href=\"https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/\" target=\"_blank\" rel=\"noopener\">The Best GPUs for Deep Learning in 2023 \u2014 An In-depth Analysis</a> (Tim Dettmers, 2023)</p>\n<p>Stas Bekman also has some great <a href=\"https://github.com/stas00/ml-engineering/tree/master/compute/accelerator\" target=\"_blank\" rel=\"noopener\">notes</a> on evaluating accelerators. 11. <a href=\"https://www.usenix.org/system/files/atc19-jeon.pdf\" target=\"_blank\" rel=\"noopener\">Analysis of Large-Scale Multi-Tenant GPU Clusters for DNN Training Workloads</a> (Jeon et al., 2019)</p>\n<p>A detailed study of GPU clusters used for training deep neural networks (DNNs) in a multi-tenant environment. The authors analyze a two-month-long trace from a GPU cluster at Microsoft, focusing on three key issues affecting cluster utilization: gang scheduling and locality constraints, GPU utilization, and job failures. 12. <a href=\"https://www.semianalysis.com/p/ai-datacenter-energy-dilemma-race\" target=\"_blank\" rel=\"noopener\">AI Datacenter Energy Dilemma - Race for AI Datacenter Space</a> (SemiAnalysis, 2024)</p>\n<p>Great analysis on the business of data centers and their bottlenecks.</p>\n<p>I also have an older post <a href=\"https://huyenchip.com/2021/09/07/a-friendly-introduction-to-machine-learning-compilers-and-optimizers.html\" target=\"_blank\" rel=\"noopener\">A friendly introduction to machine learning compilers and optimizers</a> (Chip Huyen, 2018)</p>"
+  },
+  {
+    "num": 10,
+    "title": "AI Engineering Architecture and User Feedback",
+    "page": "449",
+    "sections": [
+      {
+        "title": "AI Engineering Architecture",
+        "page": "449",
+        "subsections": [
+          {
+            "title": "Step 1. Enhance Context",
+            "page": "450"
+          },
+          {
+            "title": "Step 2. Put in Guardrails",
+            "page": "451"
+          },
+          {
+            "title": "Step 3. Add Model Router and Gateway",
+            "page": "456"
+          },
+          {
+            "title": "Step 4. Reduce Latency with Caches",
+            "page": "460"
+          },
+          {
+            "title": "Step 5. Add Agent Patterns",
+            "page": "463"
+          },
+          {
+            "title": "Monitoring and Observability",
+            "page": "465"
+          },
+          {
+            "title": "AI Pipeline Orchestration",
+            "page": "472"
+          }
+        ]
+      },
+      {
+        "title": "User Feedback",
+        "page": "474",
+        "subsections": [
+          {
+            "title": "Extracting Conversational Feedback",
+            "page": "475"
+          },
+          {
+            "title": "Feedback Design",
+            "page": "480"
+          },
+          {
+            "title": "Feedback Limitations",
+            "page": "490"
+          }
+        ]
+      },
+      {
+        "title": "Summary",
+        "page": "492",
+        "subsections": []
+      },
+      {
+        "title": "**Epilogue**",
+        "page": "495",
+        "subsections": []
+      },
+      {
+        "title": "**Index**",
+        "page": "497",
+        "subsections": []
+      }
+    ],
+    "summary_html": "<center><img src=\"assets/aie-architecture.png\" width=\"800\"><br>\n<i>Figure 10-10. A common generative AI application architecture.</i>\n</center>\n<br>\nIf each previous chapter focused on a specific aspect of AI engineering, this chapter looked into the process of building applications on top of foundation models as a whole.\n<p>The chapter consisted of two parts. The first part discussed a common architecture for AI applications. While the exact architecture for an application might vary, this high-level architecture provides a framework for understanding how different components fit together. I used the step-by-step approach in building this architecture to discuss the challenges at each step and what techniques you can use to address them.</p>\n<p>While it&#x27;s necessary to separate components to keep your system modular and maintainable, this separation is fluid. There are many ways in which components can overlap in functionalities. For example, guardrails can be implemented in the inference service, the model gateway, or as a standalone component.</p>\n<p>Each additional component can potentially make your system more capable, safer, or faster, but will also increase the system&#x27;s complexity, exposing it to new failure modes. One integral part of any complex system is monitoring and observability. Observability involves understanding how your system fails, designing metrics and alerts around failures, and ensuring that your system is designed in a way that makes these failures detectable and traceable. While many observability best practices and tools from software engineering and traditional machine learning are applicable to AI engineering applications, foundation models introduce new failure modes, which require additional metrics and design considerations.</p>\n<p>At the same time, the conversational interface enables new types of user feedback, which you can leverage for analytics, product improvement, and the data flywheel. The second part of the chapter discussed various forms of conversational feedback and how to design your application to effectively collect it.</p>\n<p>Traditionally, user feedback design has been seen as a product responsibility rather than an engineering one, and as a result, it is often overlooked by engineers. However, since user feedback is a crucial source of data for continuously improving AI models, more AI engineers are now becoming involved in the process to ensure they receive the data they need. This reinforces the idea from Chapter 1 that, compared to traditional ML engineering, AI engineering is moving closer to product. This is because of both the increasing importance of data flywheel and product experience as competitive advantages.</p>\n<p>Many AI challenges are, at their core, system problems. To solve them, it&#x27;s often necessary to step back and consider the system as a whole. A single problem might be addressed by different components working independently, or a solution could require the collaboration of multiple components. A thorough understanding of the system is essential to solving real problems, unlocking new possibilities, and ensuring safety.</p>",
+    "resources_html": "<p class=\"res-item\">1. <a href=\"https://sre.google/workbook/monitoring/\" target=\"_blank\" rel=\"noopener\">Chapter 4: Monitoring</a> from Google SRE Book 1. <a href=\"https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/\" target=\"_blank\" rel=\"noopener\">Guidelines for Human-AI Interaction</a> (Microsoft Research)</p>\n<p>Microsoft proposed 18 design guidelines for human-AI interaction, covering decisions before development, during development, when something goes wrong, and over time. 1. <a href=\"https://arxiv.org/abs/2308.15812v3\" target=\"_blank\" rel=\"noopener\">Peering Through Preferences: Unraveling Feedback Acquisition for Aligning Large Language Models</a> (Bansal et al., 2023)</p>\n<p>A study on how the feedback protocol influences a model&#x27;s training performance. 1. <a href=\"https://arxiv.org/abs/1911.02557\" target=\"_blank\" rel=\"noopener\">Feedback-Based Self-Learning in Large-Scale Conversational AI Agents</a> (Ponnusamy et al., Amazon 2019) 1. <a href=\"https://arxiv.org/abs/2010.12251\" target=\"_blank\" rel=\"noopener\">A scalable framework for learning from implicit user feedback to improve natural language understanding in large-scale conversational AI systems</a> (Park et al., Amazon 2020)</p>\n<p>User feedback design for conversation AI is an under-researched area so there aren&#x27;t many resources yet, but I hope to see that will soon change.</p>"
+  }
+]

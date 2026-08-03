@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Engineering — Study Notes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="book-title">AI Engineering</div>
+      <div class="book-subtitle">Study companion</div>
+    </div>
+    <button class="review-btn" id="reviewBtn">
+      <span class="review-icon">◆</span>
+      <span>Review open questions</span>
+      <span class="review-count" id="reviewCount">0</span>
+    </button>
+    <div class="tree" id="tree"></div>
+  </nav>
+
+  <main class="content" id="content">
+    <div class="empty-state">Loading…</div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
